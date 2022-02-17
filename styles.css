@@ -96,6 +96,10 @@ main{
   padding: 20px;
 }
 
+main .socials{
+  
+}
+
 footer{
   grid-area: footer;
   background-color: #3098D9;
