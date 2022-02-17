@@ -104,11 +104,13 @@ main{
 .box{
   background-color: #3098D9;
   padding: 20px;
+  margin: 20px;
 }
 
 main section .annoucement{
-  width: 775px;
+  width: 99%;
   display: flex;
+  justify-content: center;
   align-content: center;
 }
 
@@ -116,6 +118,7 @@ main section h1{
   text-align: center;
   font-size: 4em;
   padding: 0px;
+  color: #0A2871;
 }
 
 main .socials{
@@ -128,7 +131,8 @@ main .socials .feed{
 }
 
 main .form{
-  
+  display: flex;
+  justify-content: center;
 }
 
 footer{
