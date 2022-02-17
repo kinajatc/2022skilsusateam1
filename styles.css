@@ -1,25 +1,32 @@
-/* .site-wrap{
+body{
+  margin: 0;
+}
+
+.site-wrap{
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 300px 400px 300px 1fr;
-  grid-gap: 40px; */
+  grid-template-columns: 15% 1fr 1fr 1fr 15%;
+  /* grid-gap: 40px;  */
   /* grid-template-rows: auto; */
-  /* grid-template-rows: 100px 320px min-content min-content min-content min-content 100px;   */
- /* grid-template-areas: 
+  grid-template-rows: min-content 900px 150px ;
+  grid-template-areas: 
       "header header header header header"
-       ". . portfolio . ."
       ". main main main ."
-      ". form form form ."
-      ". certifications certifications certifications ."
-      ". work-samples work-samples work-samples . "
+      /* ". form form form ." */
+      /* ". certifications certifications certifications ." */
+      /* ". work-samples work-samples work-samples . " */
       "footer footer footer footer footer"; 
-}*/
-
-
-.header{
-  background-color: red;
 }
+
+
+header{
+  grid-area: header;
+  background-color: #3098D9;
+  padding: 20px;
+}
+
+
 
 .menu{
   list-style-type: none;
@@ -30,8 +37,8 @@
 /* W3Schools styles */
     /* Dropdown Button */
     .dropbtn {
-        background-color: darkblue;
-        color: white;
+        background-color: #F2F2F2;
+        color: darkblue;
         padding: 16px;
         margin: 0px 20px;
         font-size: 16px;
@@ -73,3 +80,26 @@
       
       /* Change the background color of the dropdown button when the dropdown content is shown */
       /* .dropdown:hover .dropbtn {background-color: #;} */
+
+main{
+  grid-area: main;
+  background-color: #F2F2F2; 
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.box{
+  background-color: #3098D9;
+  padding: 20px;
+}
+
+footer{
+  grid-area: footer;
+  background-color: #3098D9;
+  text-align: center;
+  padding: 20px;
+
+}
