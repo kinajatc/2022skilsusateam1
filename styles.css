@@ -1,4 +1,5 @@
 body{
+  background-color: #03588C;
   margin: 0;
 }
 
@@ -9,7 +10,7 @@ body{
   grid-template-columns: 15% 1fr 1fr 1fr 15%;
   /* grid-gap: 40px;  */
   /* grid-template-rows: auto; */
-  grid-template-rows: min-content 900px 150px ;
+  grid-template-rows: min-content max-content 150px ;
   grid-template-areas: 
       "header header header header header"
       ". main main main ."
@@ -26,6 +27,16 @@ header{
   padding: 20px;
 }
 
+header .tagline{
+  background-color: #F2F2F2;
+  color: #0A2871;
+  border: 2px solid #0A2871;
+  float: right;
+  padding: 20px;
+  text-align: center;
+  margin-right: 20px;
+}
+
 
 
 .menu{
@@ -38,9 +49,9 @@ header{
     /* Dropdown Button */
     .dropbtn {
         background-color: #F2F2F2;
-        color: darkblue;
-        padding: 16px;
-        margin: 0px 20px;
+        color: #0A2871;
+        padding: 15px 30px;
+        margin: 0px 20px 0px 0px;
         font-size: 16px;
         border: none;
         border-radius: 10px;
@@ -88,7 +99,6 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 
 .box{
@@ -96,7 +106,28 @@ main{
   padding: 20px;
 }
 
+main section .annoucement{
+  width: 775px;
+  display: flex;
+  align-content: center;
+}
+
+main section h1{
+  text-align: center;
+  font-size: 4em;
+  padding: 0px;
+}
+
 main .socials{
+  display: flex;
+  justify-content: space-between;
+}
+
+main .socials .feed{
+  width: 320px;
+}
+
+main .form{
   
 }
 
@@ -105,5 +136,4 @@ footer{
   background-color: #3098D9;
   text-align: center;
   padding: 20px;
-
 }
